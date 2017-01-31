@@ -1,0 +1,127 @@
+insert into zhihu_data (txt,proCount,commentId,commentCount,commentHtml) values ('  看到这么多抨击百度的答案被删被顶下去，我就知道这次百度绝对没有改正的决心。故意泄露一封内部信就想重赢人民群众的信任？对不起，人民群众的智商已经随着经济的发展增长了不少，不是当年那群被你随意糊弄的孩子了。更何况在这封信里我一点也没有读出百度…  显示全部  ','191','35494023','15','<div tabindex="-1" class="zm-item-answer  zm-item-expanded"
+
+itemprop="topAnswer"
+
+itemscope itemtype="http://schema.org/Answer"
+data-aid="35494023"
+data-atoken="100106339"
+data-collapsed="0"
+data-created="1462878929"
+data-deleted="0"
+data-helpful="1"
+data-isowner="0"
+data-copyable="1"
+
+
+>
+<link itemprop="url" href="/question/45945664/answer/100106339">
+<meta itemprop="answer-id" content="35494023">
+<meta itemprop="answer-url-token" content="100106339">
+<a class="zg-anchor-hidden" name="answer-35494023"></a>
+
+
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="count">191</span>
+<span class="label sr-only">赞同</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label sr-only">反对</span>
+</button>
+</div>
+
+
+<div class="answer-head">
+<div class="zm-item-answer-author-info">
+
+<a class="zm-item-link-avatar avatar-link"
+
+href="/people/pan-jun-shen" target="_blank" data-tip="p$t$pan-jun-shen"
+
+><img src="https://pic4.zhimg.com/1812f7b1f64d6c9a8bcab08f16387ce7_s.jpg"
+class="zm-list-avatar avatar"
+></a>
+
+
+<a class="author-link"
+data-tip="p$t$pan-jun-shen"
+target="_blank" href="/people/pan-jun-shen"
+>Panpan</a>
+
+
+<span title="飞行员也没有女朋友（╯‵□′）╯︵┴─┴" class="bio">，飞行员也没有女朋友（╯‵□′）╯︵┴─┴</span>
+
+</div>
+<div class="zm-item-vote-info" data-votecount="191">
+
+<span class="voters text">
+<span class="user-block"><a data-tip="p$t$chen-xiao-meng-5-34" href="https://www.zhihu.com/people/chen-xiao-meng-5-34" target="_blank" class="zg-link" title="陈小梦"
+>陈小梦</a>、</span><span class="user-block"><a data-tip="p$t$jimmyallen" href="https://www.zhihu.com/people/jimmyallen" target="_blank" class="zg-link" title="JimmyAllen"
+>JimmyAllen</a>、</span><span class="user-block">知乎用户</span>
+</span>
+
+
+<a href="javascript:;" class="more text"> 等人赞同</a>
+
+
+
+
+</div>
+</div>
+<div class="zm-item-rich-text expandable js-collapse-body" data-resourceid="10591436" data-action="/answer/content" data-author-name="Panpan" data-entry-url="/question/45945664/answer/100106339">
+
+
+<div class="zh-summary summary clearfix" style="display:none;">
+<img data-rawwidth="1241" data-rawheight="1587" src="https://pic3.zhimg.com/154880f54a3a0e35174250ddb2212ec6_200x112.jpg" class="origin_image inline-img zh-lightbox-thumb" data-original="https://pic3.zhimg.com/154880f54a3a0e35174250ddb2212ec6_r.jpg">
+看到这么多抨击百度的答案被删被顶下去，我就知道这次百度绝对没有改正的决心。故意泄露一封内部信就想重赢人民群众的信任？对不起，人民群众的智商已经随着经济的发展增长了不少，不是当年那群被你随意糊弄的孩子了。更何况在这封信里我一点也没有读出百度…
+
+<a href="/question/45945664/answer/100106339" class="toggle-expand">显示全部</a>
+
+</div>
+
+
+<div class="zm-editable-content clearfix">
+看到这么多抨击百度的答案被删被顶下去，我就知道这次百度绝对没有改正的决心。<br><br>故意泄露一封内部信就想重赢人民群众的信任？对不起，人民群众的智商已经随着经济的发展增长了不少，不是当年那群被你随意糊弄的孩子了。<br>更何况在这封信里我一点也没有读出百度革新的决心，信里只有boss丢锅的丑陋嘴脸。<br><noscript><img data-rawwidth="1241" data-rawheight="1587" src="https://pic3.zhimg.com/154880f54a3a0e35174250ddb2212ec6_b.jpg" class="origin_image zh-lightbox-thumb" width="1241" data-original="https://pic3.zhimg.com/154880f54a3a0e35174250ddb2212ec6_r.jpg"></noscript><img data-rawwidth="1241" data-rawheight="1587" src="//zhstatic.zhihu.com/assets/zhihu/ztext/whitedot.jpg" class="origin_image zh-lightbox-thumb lazy" width="1241" data-original="https://pic3.zhimg.com/154880f54a3a0e35174250ddb2212ec6_r.jpg" data-actualsrc="https://pic3.zhimg.com/154880f54a3a0e35174250ddb2212ec6_b.jpg"><br><br><br>想让一个每天刀口舔血的屠夫因为一次罚酒三杯就改吃素，这不现实。<br><br>诚然，百度是摆在我国互联网+风口上吹起来的一头肥猪，肥到成为了我国互联网产业的一张撕不烂的名片。我们无法改变百度，但是我们至少可以改变自己。<br><br>抵制百度，从我做起！
+</div>
+
+
+</div>
+<a class="zg-anchor-hidden ac" name="35494023-comment"></a>
+<div class="zm-item-meta answer-actions clearfix js-contentActions">
+<div class="zm-meta-panel">
+
+<a itemprop="url" class="answer-date-link meta-item" data-tip="s$t$发布于 2016-05-10" target="_blank" href="/question/45945664/answer/100106339">编辑于 昨天 00:12</a>
+
+<a href="#" name="addcomment" class="meta-item toggle-comment js-toggleCommentBox">
+<i class="z-icon-comment"></i>15 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide js-thank" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide js-share"><i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide js-collect"><i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" class="meta-item zu-autohide js-noHelp">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" class="meta-item zu-autohide js-report">举报</a>
+
+
+
+<span class="zg-bull">&bull;</span>
+
+<a href="/terms#sec-licence-1" target="_blank" class="meta-item copyright"> 作者保留权利 </a>
+
+
+</div>
+</div>
+</div>')
