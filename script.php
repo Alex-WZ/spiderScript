@@ -7,36 +7,42 @@ $url = 'https://www.zhihu.com/node/QuestionAnswerListV2';
 
 $offset = 20;
 $finalResult = array();
-$questionId = 22592866; // you question id
+$questionList = json_decode(file_get_contents('./resource.txt'), true);
 
-do{
+foreach ($questionList as  $questionId ){
+	
+	do{
 
-	$data['params'] = '{"url_token": '.$questionId.',"pagesize":3,"offset":' . $offset . '}';
-	$data['method'] = 'next';
+		$data['params'] = '{"url_token": '.$questionId.',"pagesize":3,"offset":' . $offset . '}';
+		$data['method'] = 'next';
 
-	$respJson = callApiPost($url,$data);
+		$respJson = callApiPost($url,$data);
 
-	$resp = json_decode($respJson,true);
-	$commentArrTmp = array();
+		$resp = json_decode($respJson,true);
+		$commentArrTmp = array();
 
-	$commentArrTmp = $resp['msg'];
-	foreach ($commentArrTmp as  $commentHtml) {
-		$htmlObj = str_get_html($commentHtml);
-		$proCount = $htmlObj->find('span',0)->innertext;
-		$commentId = substr($htmlObj->find('a',0)->name,7);
-		$commentCount = (int)$htmlObj->find('a',9)->plaintext;
-		// var_dump($htmlObj->find('div',6)->plaintext);exit;
-		$txt = $htmlObj->find('div',7)->plaintext;
-		// save data
-		insDb($proCount,$commentId,$commentCount,$txt,$commentHtml);
-	}
+		$commentArrTmp = $resp['msg'];
+		foreach ($commentArrTmp as  $commentHtml) {
+			$htmlObj = str_get_html($commentHtml);
+			$proCount = $htmlObj->find('span',0)->innertext;
+			$commentId = substr($htmlObj->find('a',0)->name,7);
+			$commentCount = (int)$htmlObj->find('a',9)->plaintext;
+			// var_dump($htmlObj->find('div',6)->plaintext);exit;
+			$txt = $htmlObj->find('div',7)->plaintext;
+			// save data
+			insDb($proCount,$commentId,$commentCount,$txt,$commentHtml,$questionId);
+		}
 
-	unset($data,$respJson,$resp);
-	$offset += 10;
+		unset($data,$respJson,$resp);
+		$offset += 10;
 
-}while (count($commentArrTmp) > 0 );
+	}while (count($commentArrTmp) > 0 );
 
-echo file_put_contents("./res.txt", json_encode($finalResult));
+	echo file_put_contents("./res.txt", json_encode($finalResult));
+
+}
+
+
 
 function callApiPost($url,$data){
 	$ch = curl_init();
@@ -52,7 +58,7 @@ function callApiPost($url,$data){
 
 
 //save data
-function insDb($proCount,$commentId,$commentCount,$txt,$commentHtml){
+function insDb($proCount,$commentId,$commentCount,$txt,$commentHtml,$questionId){
 
 	$con = mysql_connect('localhost:3306','root','vertrigo');
 
@@ -63,7 +69,7 @@ function insDb($proCount,$commentId,$commentCount,$txt,$commentHtml){
 	mysql_set_charset("UTF8", $con);
 	mysql_select_db("test", $con);
 
-	$sql = "insert into zhihu_data (txt,proCount,commentId,commentCount,commentHtml) values ('{$txt}','{$proCount}','{$commentId}','{$commentCount}','{$commentHtml}')";
+	$sql = "insert into zhihu_data (txt,proCount,commentId,commentCount,commentHtml,questionId) values ('{$txt}','{$proCount}','{$commentId}','{$commentCount}','{$commentHtml}','{$questionId}')";
 	// $sql = "insert into zhihu_data (txt,proCount,commentId,commentCount,commentHtml) values ('{txt}','{proCount}','{commentId}','{commentCount}','{commentHtml}' )";
 	// file_put_contents("./text.txt", $sql);exit;
 	$result = mysql_query($sql, $con);  
