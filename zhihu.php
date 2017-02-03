@@ -60,14 +60,14 @@ function callApiPost($url,$data){
 //save data
 function insDb($proCount,$commentId,$commentCount,$txt,$commentHtml,$questionId){
 
-	$con = mysql_connect('localhost:3306','root','vertrigo');
+	$con = mysql_connect('localhost:3306','root','');
 
 	if(!$con){
 		echo 'db err';
 		exit;
 	}
 	mysql_set_charset("UTF8", $con);
-	mysql_select_db("test", $con);
+	mysql_select_db("database", $con);
 
 	$sql = "insert into zhihu_data (txt,proCount,commentId,commentCount,commentHtml,questionId) values ('{$txt}','{$proCount}','{$commentId}','{$commentCount}','{$commentHtml}','{$questionId}')";
 	// $sql = "insert into zhihu_data (txt,proCount,commentId,commentCount,commentHtml) values ('{txt}','{proCount}','{commentId}','{commentCount}','{commentHtml}' )";
